@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="image/x-ico" href="./favicon.ico" />
+    <link rel="stylesheet" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <title>Navigation : navbar</title>
+</head>
+<body class="has-navbar-fixed-top"> <!-- has-navbar-fixed-bottom -->
+
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation"> <!-- is-fixed-bottom -->
+        <div class="navbar-brand">
+            <a href="#" class="navbar-item"><img src="./favicon.ico" alt="Logo docker"></a>
+            <a id="icone" class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navMenu" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="" class="navbar-item">Home</a>
+                <a href="" class="navbar-item">Documentation</a>
+                <div class="navbar-item has-dropdown is-hoverable"> <!-- has-dropdown-up -->
+                    <a class="navbar-link">More</a> <!-- is-arrowless -->
+                    <div class="navbar-dropdown is-boxed"> <!-- is-boxed(arrondi tout les angles du dropdown) -->
+                        <a class="navbar-item">About</a>
+                        <a class="navbar-item">Jobs</a>
+                        <a class="navbar-item is-selected">Contact</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">Report an issue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="" class="button is-primary">Sign up</a>
+                        <a href="" class="button is-light">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        let  navMenu = document.querySelector('#navMenu')
+        let icone = document.querySelector('#icone')
+        icone.addEventListener('click', function() {
+            icone.classList.toggle('is-active');
+            navMenu.classList.toggle('is-active')
+        })
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container is-fluid" style="position: absolute;bottom: 2rem;">
+    <div class="grid">
+        <div class="cell is-col-min-12"><a class="button is-fullwidth is-primary is-light is-active is-focused">Navigation</a></div>
+        <div class="cell is-col-min-12"><a href="./Menu.html" class="button is-fullwidth is-link is-light">Menu</a></div>
+        <div class="cell is-col-min-12"><a href="./Breadcrumb.html" class="button is-fullwidth is-success is-light">Breadcrumb</a></div>
+        <div class="cell is-col-min-12"><a href="./Onglet.html" class="button is-fullwidth is-info is-light">Tab</a></div>
+        <div class="cell is-col-min-12"><a href="./ProgressBar.html" class="button is-fullwidth is-warning is-light">ProgressBar</a></div>
+        <div class="cell is-col-min-12"><a href="./Media.html" class="button is-fullwidth is-danger is-light">Media</a></div>
+        <div class="cell is-col-min-12"><a href="./Notification.html" class="button is-fullwidth is-danger is-light">Notification</a></div>
+        <div class="cell is-col-min-12"><a href="./Message.html" class="button is-fullwidth is-warning is-light">Message</a></div>
+        <div class="cell is-col-min-12"><a href="./Card.html" class="button is-fullwidth is-info is-light">Card</a></div>
+        <div class="cell is-col-min-12"><a href="./Fenêtre.html" class="button is-fullwidth is-success is-light">Modal</a></div>
+        <div class="cell is-col-min-12"><a href="./File.html" class="button is-fullwidth is-link is-light">File</a></div>
+        <div class="cell is-col-min-12"><a href="./Panel.html" class="button is-fullwidth is-primary is-light">Panel</a></div>
+        <div class="cell is-col-min-12"><a href="./Hero.html" class="button is-fullwidth is-primary is-light">Hero</a></div>
+        <div class="cell is-col-min-12"><a href="./Dropdown.html" class="button is-fullwidth is-link is-light">Dropdown</a></div>
+        <div class="cell is-col-min-12"><a href="./Tag.html" class="button is-fullwidth is-success is-light">Tag</a></div>
+        <div class="cell is-col-min-12"><a href="./Pagination.html" class="button is-fullwidth is-info is-light">Pagination</a></div>
+        <div class="cell is-col-min-12"><a href="./Tableau.html" class="button is-fullwidth is-warning is-light">Tableau</a></div>
+        <div class="cell is-col-min-12"><a href="./Font.html" class="button is-fullwidth is-danger is-light">Fonts</a></div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

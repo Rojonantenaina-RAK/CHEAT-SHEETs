@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/font-awesome-6.js" crossorigin="anonymous"></script> <!-- Font-Awesome-6 -->
+    <!-- <script src="https://kit.fontawesome.com/221fcbb232.js" crossorigin="anonymous"></script> --> <!-- online-->
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <title>Dropdown</title>
+</head>
+<body>
+    <div id="drop" class="dropdown"> <!-- is-hoverable(show up when hovered) / is-active(show up) / is-left(default) / is-right(right-aligned)  is-up(drogup)  --> 
+        <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                <span>Title</span>
+                <span class="icon is-small"><i class="fa-solid fa-angle-down" aria-hidden="true"></i></span>
+            </button>
+        </div>
+        <div id="dropdown-menu" class="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+                <!-- <div class="dropdown-item">You custom contents here</div> -->
+                <a class="dropdown-item is-active">1</a>
+                <a class="dropdown-item">2</a>
+                <hr class="dropdown-divider">
+                <a class="dropdown-item">3</a>
+                <a class="dropdown-item">4</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        let drop = document.querySelector('#drop')
+        drop.addEventListener('click', function() {drop.classList.toggle('is-active')})
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container is-fluid" style="position: absolute;bottom: 2rem;">
+    <div class="grid">
+        <div class="cell is-col-min-12"><a href="./Navigation.html" class="button is-fullwidth is-primary is-light">Navigation</a></div>
+        <div class="cell is-col-min-12"><a href="./Menu.html" class="button is-fullwidth is-link is-light">Menu</a></div>
+        <div class="cell is-col-min-12"><a href="./Breadcrumb.html" class="button is-fullwidth is-success is-light">Breadcrumb</a></div>
+        <div class="cell is-col-min-12"><a href="./Onglet.html" class="button is-fullwidth is-info is-light">Tab</a></div>
+        <div class="cell is-col-min-12"><a href="./ProgressBar.html" class="button is-fullwidth is-warning is-light">ProgressBar</a></div>
+        <div class="cell is-col-min-12"><a href="./Media.html" class="button is-fullwidth is-danger is-light">Media</a></div>
+        <div class="cell is-col-min-12"><a href="./Notification.html" class="button is-fullwidth is-danger is-light">Notification</a></div>
+        <div class="cell is-col-min-12"><a href="./Message.html" class="button is-fullwidth is-warning is-light">Message</a></div>
+        <div class="cell is-col-min-12"><a href="./Card.html" class="button is-fullwidth is-info is-light">Card</a></div>
+        <div class="cell is-col-min-12"><a href="./Fenêtre.html" class="button is-fullwidth is-success is-light">Modal</a></div>
+        <div class="cell is-col-min-12"><a href="./File.html" class="button is-fullwidth is-link is-light">File</a></div>
+        <div class="cell is-col-min-12"><a href="./Panel.html" class="button is-fullwidth is-primary is-light">Panel</a></div>
+        <div class="cell is-col-min-12"><a href="./Hero.html" class="button is-fullwidth is-primary is-light">Hero</a></div>
+        <div class="cell is-col-min-12"><a class="button is-fullwidth is-link is-light is-active is-focused">Dropdown</a></div>
+        <div class="cell is-col-min-12"><a href="./Tag.html" class="button is-fullwidth is-success is-light">Tag</a></div>
+        <div class="cell is-col-min-12"><a href="./Pagination.html" class="button is-fullwidth is-info is-light">Pagination</a></div>
+        <div class="cell is-col-min-12"><a href="./Tableau.html" class="button is-fullwidth is-warning is-light">Tableau</a></div>
+        <div class="cell is-col-min-12"><a href="./Font.html" class="button is-fullwidth is-danger is-light">Fonts</a></div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="image/x-ico" href="./favicon.ico" />
+    <link rel="stylesheet" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <title>Fenêtre : modal : popUpBox</title>
+</head>
+<body class="is-relative" style="height: 100%;">
+
+
+
+
+    <!-- simple-content  image  card -->
+    <!-- simple modal -->
+    <a class="js-modal-trigger" data-target="simpleModalContent">Modal</a><br>
+
+    <div id="simpleModalContent" class="modal"> <!-- just add is-active to active it-->
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box"><p>Yo!</p></div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+
+
+    <!-- image modal -->
+    <a class="js-modal-trigger" data-target="imageModal">Image Modal</a><br>
+
+    <div id="imageModal" class="modal"> <!-- just add is-active to active it-->
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <p class="image"> <!-- is-4by3 -->
+                <img src="./images/logoENI.png" alt="">
+            </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    
+
+
+
+    <!-- card modal -->
+    <a class="js-modal-trigger" data-target="cardModal">Card Modal</a>
+
+    <div id="cardModal" class="modal"> <!-- just add is-active to active it-->
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Title</p>
+                <button id="deletee" class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet molestiae consequatur labore mollitia, temporibus dicta tenetur quis laboriosam accusantium molestias!</p>
+            </section>
+            <footer class="modal-card-foot">
+                <div class="buttons">
+                    <button class="button is-success">Save</button>
+                    <button class="button">Cancel</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+    <!-- JavaScript necessaire -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            function openModal($el) {$el.classList.add('is-active');}
+            function closeModal($el) {$el.classList.remove('is-active');}
+            function closeAllModals() {
+                (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+                closeModal($modal);
+                });
+            }
+
+            (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+                const modal = $trigger.dataset.target;
+                const $target = document.getElementById(modal);
+                $trigger.addEventListener('click', () => {
+                openModal($target);
+                });
+            });
+
+            (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+                const $target = $close.closest('.modal');
+                $close.addEventListener('click', () => {
+                closeModal($target);
+                });
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if(event.key === "Escape") {
+                closeAllModals();
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container is-fluid" style="position: absolute;bottom: 2rem;">
+        <div class="grid">
+            <div class="cell is-col-min-12"><a href="./Navigation.html" class="button is-fullwidth is-primary is-light">Navigation</a></div>
+            <div class="cell is-col-min-12"><a href="./Menu.html" class="button is-fullwidth is-link is-light">Menu</a></div>
+            <div class="cell is-col-min-12"><a href="./Breadcrumb.html" class="button is-fullwidth is-success is-light">Breadcrumb</a></div>
+            <div class="cell is-col-min-12"><a href="./Onglet.html" class="button is-fullwidth is-info is-light">Tab</a></div>
+            <div class="cell is-col-min-12"><a href="./ProgressBar.html" class="button is-fullwidth is-warning is-light">ProgressBar</a></div>
+            <div class="cell is-col-min-12"><a href="./Media.html" class="button is-fullwidth is-danger is-light">Media</a></div>
+            <div class="cell is-col-min-12"><a href="./Notification.html" class="button is-fullwidth is-danger is-light">Notification</a></div>
+            <div class="cell is-col-min-12"><a href="./Message.html" class="button is-fullwidth is-warning is-light">Message</a></div>
+            <div class="cell is-col-min-12"><a href="./Card.html" class="button is-fullwidth is-info is-light">Card</a></div>
+            <div class="cell is-col-min-12"><a class="button is-fullwidth is-success is-light is-active is-focused">Modal</a></div>
+            <div class="cell is-col-min-12"><a href="./File.html" class="button is-fullwidth is-link is-light">File</a></div>
+            <div class="cell is-col-min-12"><a href="./Panel.html" class="button is-fullwidth is-primary is-light">Panel</a></div>
+            <div class="cell is-col-min-12"><a href="./Hero.html" class="button is-fullwidth is-primary is-light">Hero</a></div>
+            <div class="cell is-col-min-12"><a href="./Dropdown.html" class="button is-fullwidth is-link is-light">Dropdown</a></div>
+            <div class="cell is-col-min-12"><a href="./Tag.html" class="button is-fullwidth is-success is-light">Tag</a></div>
+            <div class="cell is-col-min-12"><a href="./Pagination.html" class="button is-fullwidth is-info is-light">Pagination</a></div>
+            <div class="cell is-col-min-12"><a href="./Tableau.html" class="button is-fullwidth is-warning is-light">Tableau</a></div>
+            <div class="cell is-col-min-12"><a href="./Font.html" class="button is-fullwidth is-danger is-light">Fonts</a></div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

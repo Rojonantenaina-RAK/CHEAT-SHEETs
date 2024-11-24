@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/font-awesome-6.js"></script>
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <title>File</title>
+</head>
+<body>
+
+    <div id="file-js" class="file has-name is-boxed is-centered"> <!-- is-primary    /   is-right(the-icon-and-label move in right)  / is-fullwidth    /    is-boxed(become a big box)  /  is-small/normal/medium/large-->
+        <label class="file-label">
+            <input type="file" class="file-input">
+            <span class="file-cta">
+                <span class="file-icon">
+                    <i class="fas fa-upload"></i>
+                </span>
+                <span class="file-label">Choose a fiiile !</span>
+            </span>
+            <span class="file-name">No file yet</span>
+        </label>
+    </div>
+
+    <script>
+        const fileInput = document.querySelector('#file-js input[type=file]')
+        fileInput.onchange = () => {
+            if(fileInput.files.length > 0) { //fileInput.files retourne un tableau
+                const fileName = document.querySelector('#file-js .file-name')
+                fileName.innerText = fileInput.files[0].name;
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container is-fluid" style="position: absolute;bottom: 2rem;">
+    <div class="grid">
+        <div class="cell is-col-min-12"><a href="./Navigation.html" class="button is-fullwidth is-primary is-light">Navigation</a></div>
+        <div class="cell is-col-min-12"><a href="./Menu.html" class="button is-fullwidth is-link is-light">Menu</a></div>
+        <div class="cell is-col-min-12"><a href="./Breadcrumb.html" class="button is-fullwidth is-success is-light">Breadcrumb</a></div>
+        <div class="cell is-col-min-12"><a href="./Onglet.html" class="button is-fullwidth is-info is-light">Tab</a></div>
+        <div class="cell is-col-min-12"><a href="./ProgressBar.html" class="button is-fullwidth is-warning is-light">ProgressBar</a></div>
+        <div class="cell is-col-min-12"><a href="./Media.html" class="button is-fullwidth is-danger is-light">Media</a></div>
+        <div class="cell is-col-min-12"><a href="./Notification.html" class="button is-fullwidth is-danger is-light">Notification</a></div>
+        <div class="cell is-col-min-12"><a href="./Message.html" class="button is-fullwidth is-warning is-light">Message</a></div>
+        <div class="cell is-col-min-12"><a href="./Card.html" class="button is-fullwidth is-info is-light">Card</a></div>
+        <div class="cell is-col-min-12"><a href="./Fenêtre.html" class="button is-fullwidth is-success is-light">Modal</a></div>
+        <div class="cell is-col-min-12"><a class="button is-fullwidth is-link is-light is-active is-focused">File</a></div>
+        <div class="cell is-col-min-12"><a href="./Panel.html" class="button is-fullwidth is-primary is-light">Panel</a></div>
+        <div class="cell is-col-min-12"><a href="./Hero.html" class="button is-fullwidth is-primary is-light">Hero</a></div>
+        <div class="cell is-col-min-12"><a href="./Dropdown.html" class="button is-fullwidth is-link is-light">Dropdown</a></div>
+        <div class="cell is-col-min-12"><a href="./Tag.html" class="button is-fullwidth is-success is-light">Tag</a></div>
+        <div class="cell is-col-min-12"><a href="./Pagination.html" class="button is-fullwidth is-info is-light">Pagination</a></div>
+        <div class="cell is-col-min-12"><a href="./Tableau.html" class="button is-fullwidth is-warning is-light">Tableau</a></div>
+        <div class="cell is-col-min-12"><a href="./Font.html" class="button is-fullwidth is-danger is-light">Fonts</a></div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

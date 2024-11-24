@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <title>Notification</title>
+</head>
+<body>
+    <div class="notification is-success is-light">
+        <button class="delete"></button>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero fugit quis necessitatibus optio! Est, amet porro ea assumenda fuga quos hic nostrum laboriosam! In quam fugiat ullam voluptas voluptatibus at?
+        Ea exercitationem saepe laudantium repellat facilis magni dignissimos cum, deserunt id, non asperiores, quia expedita cumque! Mollitia ab quos similique ipsum modi ullam eligendi, nisi minus voluptatem. Assumenda, doloremque veniam!
+        Incidunt officiis possimus nostrum est, laborum veniam rerum, quidem labore cupiditate, enim accusamus sunt aliquid. Voluptate laborum quas soluta officiis provident itaque, molestiae veritatis sed, quia labore aspernatur fugiat ipsam.
+        Magni, veniam? Accusamus laboriosam, architecto reprehenderit sit impedit explicabo eum iure similique fugiat in quas, aut est accusantium officia laborum eius eligendi, nam ut sed rem quam. Ipsum, assumenda laborum.
+        Maxime consequuntur accusantium quaerat dolores, vel itaque eaque labore reprehenderit id provident, dignissimos porro, explicabo beatae exercitationem cupiditate veniam debitis odit corrupti fuga! Eaque dignissimos asperiores magnam enim, labore commodi.
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+            const $notification = $delete.parentNode;
+
+            $delete.addEventListener('click', () => {
+                $notification.parentNode.removeChild($notification);
+                });
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container is-fluid" style="position: absolute;bottom: 2rem;">
+    <div class="grid">
+        <div class="cell is-col-min-12"><a href="./Navigation.html" class="button is-fullwidth is-primary is-light">Navigation</a></div>
+        <div class="cell is-col-min-12"><a href="./Menu.html" class="button is-fullwidth is-link is-light">Menu</a></div>
+        <div class="cell is-col-min-12"><a href="./Breadcrumb.html" class="button is-fullwidth is-success is-light">Breadcrumb</a></div>
+        <div class="cell is-col-min-12"><a href="./Onglet.html" class="button is-fullwidth is-info is-light">Tab</a></div>
+        <div class="cell is-col-min-12"><a href="./ProgressBar.html" class="button is-fullwidth is-warning is-light">ProgressBar</a></div>
+        <div class="cell is-col-min-12"><a href="./Media.html" class="button is-fullwidth is-danger is-light">Media</a></div>
+        <div class="cell is-col-min-12"><a class="button is-fullwidth is-danger is-light is-active is-focused">Notification</a></div>
+        <div class="cell is-col-min-12"><a href="./Message.html" class="button is-fullwidth is-warning is-light">Message</a></div>
+        <div class="cell is-col-min-12"><a href="./Card.html" class="button is-fullwidth is-info is-light">Card</a></div>
+        <div class="cell is-col-min-12"><a href="./Fenêtre.html" class="button is-fullwidth is-success is-light">Modal</a></div>
+        <div class="cell is-col-min-12"><a href="./File.html" class="button is-fullwidth is-link is-light">File</a></div>
+        <div class="cell is-col-min-12"><a href="./Panel.html" class="button is-fullwidth is-primary is-light">Panel</a></div>
+        <div class="cell is-col-min-12"><a href="./Hero.html" class="button is-fullwidth is-primary is-light">Hero</a></div>
+        <div class="cell is-col-min-12"><a href="./Dropdown.html" class="button is-fullwidth is-link is-light">Dropdown</a></div>
+        <div class="cell is-col-min-12"><a href="./Tag.html" class="button is-fullwidth is-success is-light">Tag</a></div>
+        <div class="cell is-col-min-12"><a href="./Pagination.html" class="button is-fullwidth is-info is-light">Pagination</a></div>
+        <div class="cell is-col-min-12"><a href="./Tableau.html" class="button is-fullwidth is-warning is-light">Tableau</a></div>
+        <div class="cell is-col-min-12"><a href="./Font.html" class="button is-fullwidth is-danger is-light">Fonts</a></div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
